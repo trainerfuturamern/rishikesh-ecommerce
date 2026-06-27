@@ -1,0 +1,4 @@
+.quantity-col .input-group > .form-control{
+    flex: none;
+    width: 40px;
+}
