@@ -24,13 +24,13 @@ export const UserContextProvider = ({children})=>{
             
             localStorage.setItem("user", JSON.stringify(loggedUser));
             localStorage.setItem("isAuthenticated", JSON.stringify(true));
-        },
-
-
-    return(
+        }
+    
+        return(
         <UserContext.Provider value={{users,user,isAuthenticated, handleUserRegister, userLogin}}>
             {children}
         </UserContext.Provider>
     )
+    
 
 }
